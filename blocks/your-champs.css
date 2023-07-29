@@ -1,0 +1,13 @@
+.your-champs__title {
+  margin: 0;
+  padding: var(--gap-space);
+}
+
+.your-champs__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  width: 90%;
+  height: 100px;
+  background: var(--background-color);
+}

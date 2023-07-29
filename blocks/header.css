@@ -1,0 +1,15 @@
+.header {
+  background: #0353a4;
+}
+
+.header__title {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.header__description {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}

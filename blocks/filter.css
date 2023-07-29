@@ -1,0 +1,71 @@
+.filter__header {
+  margin: 0;
+  padding: var(--gap-space);
+}
+
+.filter__lists {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-space);
+}
+
+.filter__position-container {
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+  list-style: none;
+  background: var(--background-color);
+}
+
+.filter__position-title {
+  margin: 0;
+  padding: 20px;
+}
+
+.filter__position-list {
+}
+
+.filter__list-item {
+}
+
+.filter__class-container {
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+  list-style: none;
+  background: var(--background-color);
+}
+
+.filter__class-title {
+  margin: 0;
+  padding: 20px;
+}
+
+.filter__class-list {
+  margin: 0;
+}
+
+.filter__class {
+}
+
+.filter__sub-class-list {
+}
+
+.filter__subclass {
+}
+
+.filter__favorites-container {
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+  list-style: none;
+  background: var(--background-color);
+}
+
+.filter__favorites-title {
+  margin: 0;
+  padding: 20px;
+}
+
+.filter__favorites-list {
+}

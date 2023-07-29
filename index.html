@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Timothy Chan" />
+    <meta
+      name="description"
+      content="pick a champion for me for league of legends"
+    />
+    <meta name="keywords" content="league of legends" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Pick For Me</title>
+  </head>
+  <body class="page">
+    <div class="page__content">
+      <!-- Header -->
+      <header class="header">
+        <h1 class="header__title">Pick For Me!</h1>
+        <p class="header__description">
+          When you can't decide... we will pick for you!
+        </p>
+      </header>
+      <main class="content">
+        <aside class="content__filter">
+          <h2 class="filter__header">Filters</h2>
+          <!-- add a reset button here (INLINE TO HEADER ABOVE!!!) -->
+          <div class="filter__lists">
+            <div class="filter__position-container">
+              <p class="filter__position-title">Position:</p>
+              <ul class="filter__position-list">
+                <li class="filter__position">Top</li>
+                <li class="filter__position">Jungle</li>
+                <li class="filter__position">Mid</li>
+                <li class="filter__position">Bottom</li>
+                <li class="filter__position">Support</li>
+              </ul>
+            </div>
+            <div class="filter__class-container">
+              <p class="filter__class-title">Class:</p>
+              <ul class="filter__class-list">
+                <li class="filter__class">
+                  Tank
+                  <ul class="filter__sub-class-list">
+                    <li class="filter__sub-class">Vanguard</li>
+                    <li class="filter__sub-class">Warden</li>
+                  </ul>
+                </li>
+                <li class="filter__class">
+                  Fighter
+                  <ul class="filter__sub-class-list">
+                    <li class="filter__sub-class">Juggernaut</li>
+                    <li class="filter__sub-class">Diver</li>
+                  </ul>
+                </li>
+                <li class="filter__class">
+                  Slayer
+                  <ul class="filter__sub-class-list">
+                    <li class="filter__sub-class">Assassin</li>
+                    <li class="filter__sub-class">Skirmisher</li>
+                  </ul>
+                </li>
+                <li class="filter__class">
+                  Mage
+                  <ul class="filter__sub-class-list">
+                    <li class="filter__sub-class">Burst</li>
+                    <li class="filter__sub-class">Battlemage</li>
+                    <li class="filter__sub-class">Artillery</li>
+                  </ul>
+                </li>
+                <li class="filter__class">Marksman</li>
+                <li class="filter__class">
+                  Controller
+                  <ul class="filter__sub-class-list">
+                    <li class="filter__sub-class">Enchanter</li>
+                    <li class="filter__sub-class">Catcher</li>
+                  </ul>
+                </li>
+                <li class="filter__class">Specialist</li>
+              </ul>
+            </div>
+            <div class="filter__favorites-container">
+              <p class="filter__favorites-title">Favorites:</p>
+              <ul class="filter__favorites-list">
+                <!-- favorite -->
+                <!-- not favorite -->
+              </ul>
+            </div>
+          </div>
+        </aside>
+        <!-- Your Champions -->
+        <section class="content__your-champs">
+          <h2 class="your-champs__title">Champions you picked</h2>
+          <!-- add a reset button here (INLINE TO HEADER ABOVE!!!) -->
+          <ul class="your-champs__list"></ul>
+        </section>
+        <!-- Cards List -->
+        <section class="content__cards">
+          <h2 class="cards__title">Pick your champions!</h2>
+          <!-- add a select all button here (INLINE TO HEADER ABOVE!!!) -->
+          <!-- List of champions -->
+          <ul class="cards__list"></ul>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer class="footer"></footer>
+    </div>
+    <!-- Champion Details Modal -->
+    <div class="modal" id="champion-details"></div>
+    <!-- Card Template -->
+    <template id="card-template">
+      <li class="card">
+        <div class="card__image-container">
+          <div class="card__image"></div>
+        </div>
+        <div class="card__header">
+          <!-- Champion name -->
+          <h2 class="card__name"></h2>
+          <p class="card__description"></p>
+          <button class="card__button" type="button">details</button>
+        </div>
+        <div class="card__info">
+          <!-- Top / Jungle / Mid / ADC / Support -->
+          <p class="card__main-position">
+            <span class="card__position-span">Position(s): </span>
+          </p>
+          <!-- Tank / Fighter / Assassin / Marksman / Mage / Support -->
+          <p class="card__main-class">
+            <span class="card__class-span">Class: </span>
+          </p>
+        </div>
+      </li>
+    </template>
+
+    <script src="./pages/index.js" type="module" defer></script>
+  </body>
+</html>
