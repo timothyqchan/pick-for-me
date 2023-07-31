@@ -1,4 +1,24 @@
+.cards__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .cards__title {
+  margin: 0;
+  padding: var(--gap-space);
+}
+
+.cards__button {
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.cards__button_type_select-all {
+}
+
+.cards__directions {
   margin: 0;
   padding: var(--gap-space);
 }
@@ -12,6 +32,5 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: var(--gap-space);
-  background: var(--background-color);
+  gap: 15px;
 }

@@ -28,6 +28,16 @@
           <h2 class="filter__header">Filters</h2>
           <!-- add a reset button here (INLINE TO HEADER ABOVE!!!) -->
           <div class="filter__lists">
+            <div class="filter__sortby-container">
+              <p class="filter__sortby-title">Sort by:</p>
+              <ul class="filter__sortby-list">
+                <!-- default -->
+                <li class="filter__sortby">Alphabetically</li>
+                <li class="filter__sortby">Highest Win Rate</li>
+                <li class="filter__sortby">Most Played</li>
+                <li class="filter__sortby">Champion Region</li>
+              </ul>
+            </div>
             <div class="filter__position-container">
               <p class="filter__position-title">Position:</p>
               <ul class="filter__position-list">
@@ -81,25 +91,25 @@
                 <li class="filter__class">Specialist</li>
               </ul>
             </div>
-            <div class="filter__favorites-container">
-              <p class="filter__favorites-title">Favorites:</p>
-              <ul class="filter__favorites-list">
-                <!-- favorite -->
-                <!-- not favorite -->
-              </ul>
-            </div>
           </div>
         </aside>
         <!-- Your Champions -->
-        <section class="content__your-champs">
-          <h2 class="your-champs__title">Champions you picked</h2>
+        <section class="content__card-mini">
+          <h2 class="card-mini__title">Champions you picked</h2>
           <!-- add a reset button here (INLINE TO HEADER ABOVE!!!) -->
-          <ul class="your-champs__list"></ul>
+          <ul class="card-mini__list"></ul>
         </section>
         <!-- Cards List -->
         <section class="content__cards">
-          <h2 class="cards__title">Pick your champions!</h2>
-          <!-- add a select all button here (INLINE TO HEADER ABOVE!!!) -->
+          <div class="cards__header">
+            <h2 class="cards__title">Pick your champions!</h2>
+            <button class="cards__button cards__button_type_select-all">
+              Select All
+            </button>
+            <p class="cards__directions">
+              Click to add a champion to your pool
+            </p>
+          </div>
           <!-- List of champions -->
           <ul class="cards__list"></ul>
         </section>
@@ -112,25 +122,31 @@
     <!-- Card Template -->
     <template id="card-template">
       <li class="card">
-        <div class="card__image-container">
-          <div class="card__image"></div>
-        </div>
+        <div class="card__image"></div>
         <div class="card__header">
           <!-- Champion name -->
           <h2 class="card__name"></h2>
           <p class="card__description"></p>
-          <button class="card__button" type="button">details</button>
         </div>
+        <button class="card__button" type="button">Details</button>
         <div class="card__info">
           <!-- Top / Jungle / Mid / ADC / Support -->
           <p class="card__main-position">
-            <span class="card__position-span">Position(s): </span>
+            Position(s):
+            <span class="card__position-span"></span>
           </p>
           <!-- Tank / Fighter / Assassin / Marksman / Mage / Support -->
           <p class="card__main-class">
-            <span class="card__class-span">Class: </span>
+            Class:
+            <span class="card__class-span"></span>
           </p>
         </div>
+      </li>
+    </template>
+    <!-- Card Mini Template -->
+    <template id="card-mini-template">
+      <li class="card-mini">
+        <div class="card-mini__image"></div>
       </li>
     </template>
 

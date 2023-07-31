@@ -1,0 +1,30 @@
+.card-mini__title {
+  margin: 0;
+  padding: var(--gap-space);
+}
+
+.card-mini__list {
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+  height: 100px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  background: var(--background-color);
+}
+
+.card-mini {
+  width: 80px;
+  height: 80px;
+}
+
+.card-mini__image {
+  width: 100%;
+  height: 100%;
+  background-position: top right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

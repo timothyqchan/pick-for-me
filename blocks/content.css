@@ -2,8 +2,8 @@
   --gap-space: 25px;
   --background-color: #fff;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 1fr) 5fr;
+  grid-template-columns: repeat(6, 01fr);
+  grid-auto-rows: min-content;
   gap: var(--gap-space);
   margin: 0 auto;
   max-width: 1440px;
@@ -16,7 +16,7 @@
   background: #b9d6f2;
 }
 
-.content__your-champs {
+.content__card-mini {
   grid-column: 2/7;
   grid-row: 1/2;
   background: #b9d6f2;
@@ -26,6 +26,7 @@
   grid-column: 2/7;
   grid-row: 2/4;
   background: #b9d6f2;
+  /* border: 4px dashed #000; */
 }
 
 @media screen and (max-width: 1200px) {

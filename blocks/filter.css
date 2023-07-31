@@ -54,7 +54,7 @@
 .filter__subclass {
 }
 
-.filter__favorites-container {
+.filter__sortby-container {
   margin: 0 auto;
   padding: 0;
   width: 90%;
@@ -62,10 +62,13 @@
   background: var(--background-color);
 }
 
-.filter__favorites-title {
+.filter__sortby-title {
   margin: 0;
   padding: 20px;
 }
 
-.filter__favorites-list {
+.filter__sortby-list {
+}
+
+.filter__sortby {
 }
